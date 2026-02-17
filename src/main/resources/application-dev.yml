@@ -1,0 +1,16 @@
+# 개발 환경 설정
+
+spring:
+  # MySQL 설정
+  datasource:
+    url: jdbc:mysql://${MYSQL_IP}:${MYSQL_PORT}/${MYSQL_DB_NAME}?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true # 쿼리 확인
+    hibernate:
+      ddl-auto: validate # DB 자동 생성
+    properties:
+      hibernate:
+        format_sql: true # SQL 가독성 향상

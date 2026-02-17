@@ -1,0 +1,5 @@
+# 공통 환경 설정
+
+spring:
+  application:
+    name: web-community-backend
