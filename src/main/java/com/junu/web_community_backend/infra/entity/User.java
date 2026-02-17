@@ -18,13 +18,13 @@ public class User {
 	@Column(length = 36)
 	private String uuid;
 
-	@Column(length = 50)
+	@Column(length = 50, nullable = false)
 	private String nickname;
 
-	@Column(name = "login_id", length = 50)
+	@Column(name = "login_id", length = 50, nullable = false)
 	private String loginId;
 
-	@Column(name = "user_pw", length = 255)
+	@Column(name = "user_pw", length = 255, nullable = false)
 	private String userPW;
 
 	//TO DO: board 외래키
